@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg) , url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-size: 1500px 1200px , 1250px 1300px;
+    background-position: -750px -750px , 450px 350px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 350px;
+    height: 350px;
+    background: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 100% 40%;
+    border-radius: 1rem;
+}
+img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position:relative;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+h1, h3{
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 5.5rem;
+    text-align: center;
+}
+#age{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-left: .5rem;
+}
+#city{
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+/* profile info section  */
+
+.profile-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid #ddd;
+    padding: 1rem 2rem;
+}
+.info h3{
+    text-align: center;
+}
+.info p{
+    font-size: .8rem;
+    text-align: center;
+    color: var(--Dark-grayish-blue);
+}
+
+@media only screen and (max-width:600%){
+    main{
+        max-width:90%;
+    }
+}
